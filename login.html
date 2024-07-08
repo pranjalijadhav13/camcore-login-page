@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+        <h1 class="mb-4">Members Login</h1>
+        <div class="card w-100 mb-4" style="max-width: 400px;">
+            <div class="card-body">
+                <h2 class="card-title">Associate Members</h2>
+                <form action="login_associate.php" method="post">
+                    <div class="form-group">
+                        <label for="associate-username">Username:</label>
+                        <input type="text" class="form-control" id="associate-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="associate-password">Password:</label>
+                        <input type="password" class="form-control" id="associate-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="card w-100" style="max-width: 400px;">
+            <div class="card-body">
+                <h2 class="card-title">Active Members</h2>
+                <form action="login_active.php" method="post">
+                    <div class="form-group">
+                        <label for="active-username">Username:</label>
+                        <input type="text" class="form-control" id="active-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="active-password">Password:</label>
+                        <input type="password" class="form-control" id="active-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
